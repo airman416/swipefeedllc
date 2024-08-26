@@ -31,3 +31,8 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
+.idea/vcs.xml
+.idea/swipefeedllc.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/profiles_settings.xml
