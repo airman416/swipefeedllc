@@ -1,0 +1,28 @@
+.mainText {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.redText {
+    color: red;
+    font-weight: bold;
+}
+
+.blackText {
+    color: black;
+}
+
+.linkButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.linkButton:hover {
+    background-color: green;
+}

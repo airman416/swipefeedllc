@@ -1,0 +1,13 @@
+.carousel {
+    width: 100%;
+    max-width: 350px;  /* Limit the size of the carousel */
+    border: black 2px solid;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carouselImage {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
