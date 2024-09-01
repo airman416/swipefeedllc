@@ -22,3 +22,22 @@
     /*display: flex;*/
     /*justify-content: left;*/
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .mainContent {
+        flex-direction: column;  /* Stack text above carousel */
+        align-items: flex-start;
+    }
+
+    .leftContent {
+        margin-right: 0;  /* Remove space on smaller screens */
+        margin-bottom: 20px;  /* Add space below the text */
+    }
+
+    .rightContent {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

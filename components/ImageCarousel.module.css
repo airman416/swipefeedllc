@@ -11,3 +11,10 @@
     height: auto;
     border-radius: 15px;
 }
+
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 250px;
+        margin-top: 25px;
+    }
+}
