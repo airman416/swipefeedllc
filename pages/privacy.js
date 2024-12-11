@@ -66,7 +66,7 @@ export default function Privacy() {
                     <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
                     <address>
                         SwipeFeed LLC<br/>
-                            Email: <a href="mailto:support@swipefeed.live">support@swipefeed.live</a><br/>
+                            Email: <a href="mailto:support@swipefeed.live">swipefeedlive@gmail.com</a><br/>
                                 Address: 7 Speare Pl, Boston, MA, 02115, United States
                     </address>
 
