@@ -13,13 +13,19 @@ export default function ImageCarousel() {
                 showArrows={false}  /* Disable the arrows */
             >
                 <div>
-                    <img src="/images/image1.png" alt="Image 1" className={styles.carouselImage} />
+                    <img src="/images/1.png" alt="Image 1" className={styles.carouselImage} />
                 </div>
                 <div>
-                    <img src="/images/image2.png" alt="Image 2" className={styles.carouselImage} />
+                    <img src="/images/2.png" alt="Image 2" className={styles.carouselImage} />
                 </div>
                 <div>
-                    <img src="/images/image3.png" alt="Image 3" className={styles.carouselImage} />
+                    <img src="/images/3.png" alt="Image 3" className={styles.carouselImage} />
+                </div>
+                <div>
+                    <img src="/images/4.png" alt="Image 4" className={styles.carouselImage} />
+                </div>
+                <div>
+                    <img src="/images/5.png" alt="Image 5" className={styles.carouselImage} />
                 </div>
             </Carousel>
         </div>
