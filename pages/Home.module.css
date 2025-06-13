@@ -1,43 +1,76 @@
 .container {
-    /*display: flex;*/
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .mainContent {
     display: flex;
     align-items: center;
-    padding: 20px;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    flex: 0.3;
+    min-height: fit-content;
+    overflow: hidden;
+    justify-content: center;
+    margin: -2rem 0;
+}
+
+.carouselContainer {
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 1rem;
 }
 
 .leftContent {
-    /*flex: 1;*/
-    /*text-align: right;*/
-    margin-right: 5vw;  /* Add some space between the text and carousel */
-    /*justify-content: right;*/
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .rightContent {
-    /*flex: 1;*/
-    /*display: flex;*/
-    /*justify-content: left;*/
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .mainContent {
-        flex-direction: column;  /* Stack text above carousel */
-        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0.25;
+        margin: -1.5rem 0;
     }
 
-    .leftContent {
-        margin-right: 0;  /* Remove space on smaller screens */
-        margin-bottom: 20px;  /* Add space below the text */
-    }
-
-    .rightContent {
+    .carouselContainer {
+        flex: 0.55;
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
+        padding-bottom: 0.5rem;
+    }
+
+    .leftContent {
+        flex: 0.6;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .rightContent {
+        flex: 0.4;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 }

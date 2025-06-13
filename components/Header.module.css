@@ -1,8 +1,8 @@
 .mainText {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding: 1.5rem 1rem 0;
+    box-sizing: border-box;
 }
 
 .redText {
@@ -31,6 +31,21 @@
 
 .appStoreLink {
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 2rem;
     transition: opacity 0.2s ease;
+}
+
+.appStoreLink:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .mainText {
+        font-size: 3rem;
+        padding: 1rem 1rem 0;
+    }
+
+    .appStoreLink {
+        margin-top: 1.5rem;
+    }
 }
