@@ -4,6 +4,35 @@ import { Metadata } from 'next'
 
 const APP_STORE_URL = 'https://apps.apple.com/us/app/swipefeed/id6739143466'
 
+const styles = {
+  container: {
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column' as const,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '1rem',
+  },
+  title: {
+    fontSize: '2rem',
+    fontWeight: 'bold',
+    marginBottom: '1rem',
+  },
+  text: {
+    fontSize: '1.125rem',
+    marginBottom: '2rem',
+  },
+  button: {
+    backgroundColor: '#3b82f6',
+    color: 'white',
+    padding: '0.75rem 1.5rem',
+    borderRadius: '0.5rem',
+    textDecoration: 'none',
+    border: 'none',
+    cursor: 'pointer',
+  }
+}
+
 export function generateMetadata({ params }: { params: { id: string } }): Metadata {
   return {
     title: 'Check out this story on SwipeFeed',
@@ -37,12 +66,12 @@ export default async function CardPage({ params }: { params: { id: string } }) {
     }
 
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-4">
-        <h1 className="text-3xl font-bold mb-4">SwipeFeed Card</h1>
-        <p className="text-lg mb-8">Card ID: {params.id}</p>
+      <div style={styles.container}>
+        <h1 style={styles.title}>SwipeFeed Card</h1>
+        <p style={styles.text}>Card ID: {params.id}</p>
         <a 
           href={APP_STORE_URL}
-          className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors"
+          style={styles.button}
         >
           View in SwipeFeed App
         </a>
