@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": ["D37CG5HJMJ.live.swipefeed"],
+                "components": [
+                    {
+                        "/": "/card/*",
+                        "comment": "Matches any URL with a path that starts with /card/"
+                    }
+                ]
+            }
+        ]
+    }
+} 
