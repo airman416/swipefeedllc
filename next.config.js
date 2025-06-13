@@ -5,7 +5,6 @@ const nextConfig = {
   async headers() {
     return [
       {
-        // Matching /.well-known/apple-app-site-association
         source: '/.well-known/apple-app-site-association',
         headers: [
           {
