@@ -10,7 +10,7 @@ export default function ImageCarousel() {
                 infiniteLoop
                 useKeyboardArrows
                 autoPlay
-                showArrows={false}  /* Disable the arrows */
+                showArrows={true}  /* Disable the arrows */
             >
                 <div>
                     <img src="/images/1.png" alt="Image 1" className={styles.carouselImage} />
