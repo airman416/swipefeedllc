@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import styles from './Home.module.css'
+import styles from './Legal.module.css'
 
 export default function Terms() {
     return (
@@ -11,6 +11,7 @@ export default function Terms() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+            <Header />
             <main className={styles.mainContent}>
                 <div style={{ maxWidth: '800px', padding: '20px' }}>
                     <h1>Terms & Conditions for SwipeFeed LLC</h1>
@@ -300,24 +301,15 @@ export default function Terms() {
                     <h2>21. Assignment</h2>
                     <p>You may not assign or transfer these Terms or your account without our written consent. We may assign our rights and obligations under these Terms without restriction.</p>
 
-                    <h2>22. Contact Information</h2>
-                    <p>If you have questions about these Terms or need to contact us for any reason, please reach out to:</p>
+                    <h2>16. Contact Us</h2>
+                    <p>If you have any questions about these Terms, please contact us at:</p>
                     <address>
                         <strong>SwipeFeed LLC</strong><br />
                         Email: <a href="mailto:swipefeedlive@gmail.com">swipefeedlive@gmail.com</a><br />
                         Address: 7 Speare Pl, Boston, MA, 02115, United States
                     </address>
-                    <p>For legal notices, please include "Legal Notice" in the subject line.</p>
-
-                    <hr style={{ margin: '40px 0' }} />
-
-                    <p>By using the SwipeFeed App, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions.</p>
-
-                    <p><strong>Last Updated:</strong> June 7, 2025</p>
-                    <p>© SwipeFeed LLC 2024</p>
                 </div>
             </main>
-
             <Footer />
         </div>
     )

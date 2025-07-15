@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import styles from './Home.module.css'
+import styles from './Legal.module.css'
 
 export default function Privacy() {
     return (
@@ -11,6 +11,7 @@ export default function Privacy() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+            <Header />
             <main className={styles.mainContent}>
                 <div style={{ maxWidth: '800px', padding: '20px' }}>
                     <h1>Privacy Policy for SwipeFeed LLC</h1>
@@ -257,7 +258,6 @@ export default function Privacy() {
                     <p>© SwipeFeed LLC 2024</p>
                 </div>
             </main>
-
             <Footer />
         </div>
     )
