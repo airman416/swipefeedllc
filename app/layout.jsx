@@ -9,8 +9,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Google tag (gtag.js) */}
-        <Script
+      </head>
+      {/* Google tag (gtag.js) */}
+      <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-BVJ7ZEVTRJ"
         />
@@ -22,7 +23,6 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-BVJ7ZEVTRJ');
           `}
         </Script>
-      </head>
       <body>{children}</body>
     </html>
   );
