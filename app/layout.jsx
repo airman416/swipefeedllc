@@ -1,4 +1,4 @@
-import GoogleAnalytics from "@components/GoogleAnalytics";
+// Google Analytics is injected directly in the <head> below
 
 export const metadata = {
   title: 'SwipeFeed',
@@ -8,10 +8,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <GoogleAnalytics />
-        {children}
-      </body>
+      <head>
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BVJ7ZEVTRJ"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-BVJ7ZEVTRJ');
+            `,
+          }}
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 } 
